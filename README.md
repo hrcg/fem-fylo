@@ -1,6 +1,8 @@
 # Fylo
 
 <img src="./images/fylo_mobile.png" width="400">
+<img src="./images/fylo_mobile_2.png" width="400">
+<img src="./images/fylo_mobile_3.png" width="400">
 <hr>
 
 # Getting Started
