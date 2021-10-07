@@ -9,8 +9,4 @@ To get started, I suggest you take a look at Github's quickstart guide [Fork a r
 
 # Overview
 
-Search any word for the definition, also has account register and login, as well as a dark/light mode.
-
-# License
-
-This project is licensed under MIT.
+Frontend Mentor Challenge, I was able to mostly finish the mobile version of the site, desktop one needs a bit more work with media queries.
