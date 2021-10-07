@@ -1,112 +1,129 @@
 .footer {
   background-color: $darkBlueFooterBackground;
-  color: $white;
-  padding: 2.5rem;
-  text-align: center;
-
-  .container {
-    @include breakpoint-up(large) {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 3fr;
-      grid-template-rows: 1fr auto;
-      grid-template-areas:
-        "logo links1 links2"
-        "social links1 links2 copyright";
-      gap: 1rem;
-      justify-items: start;
-    }
+  font-size: 1rem;
+  padding-top: 6rem;
+  @include breakpoint-up(large) {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
-  a {
-    color: $white;
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    display: grid;
+    grid-row-gap: 35px;
+    grid-column-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo" "address" "contact" "links1" "links2" "social";
+
+    @include breakpoint-up(medium) {
+      grid-column-gap: 25px;
+    }
+
+    @include breakpoint-up(large) {
+      grid-column-gap: 35px;
+      grid-template-columns: 3fr 2fr 2fr 2fr auto;
+      grid-template-rows: 60px 1fr;
+      grid-template-areas: "logo logo logo logo logo" "address contact links1 links2 social";
+    }
+
+    @include breakpoint-up(xlarge) {
+      grid-column-gap: 60px;
+    }
   }
 
   &__logo {
-    display: inline-block;
-
-    @include breakpoint-down(medium) {
-      margin-bottom: 1.875rem;
-    }
-
     @include breakpoint-up(large) {
       grid-area: logo;
     }
   }
 
-  &__text {
-    font-size: 1.0625rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    font-weight: 400;
-  }
-  &__links {
+  &__address {
+    grid-area: address;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1.875rem;
-    align-items: center;
-    font-size: 0.9375rem;
+
+    svg {
+      flex: 0 0 13px;
+      margin-top: 3px;
+      margin-right: 20px;
+    }
+  }
+
+  &__contact {
+    grid-area: contact;
 
     @include breakpoint-up(large) {
-      justify-content: space-between;
-      align-items: start;
+      justify-self: right;
     }
 
-    &.col1 {
-      @include breakpoint-up(large) {
-        grid-area: links1;
-      }
-    }
-
-    &.col2 {
-      @include breakpoint-down(medium) {
-        margin-bottom: 1.875rem;
-      }
-
-      @include breakpoint-up(large) {
-        grid-area: links2;
-      }
-    }
-
-    &__socials {
-      @include breakpoint-down(medium) {
-        margin-bottom: 1.875rem;
-        margin-top: 1.875rem;
-      }
-
-      @include breakpoint-up(large) {
-        grid-area: social;
-        align-self: end;
-      }
-
-      a {
-        display: inline-block;
-        height: 1.25rem;
-
-        a:not(:last-child) {
-          margin-right: 1rem;
-        }
-      }
-      a {
-        line-height: 2.25;
-        transition: color 150ms ease-in-out;
-      }
-    }
-
-    &__copyright {
-      font-size: 0.8125rem;
-      color: $white;
-
-      @include breakpoint-up(large) {
-        grid-area: copyright;
-        align-self: end;
-        justify-self: end;
-      }
-    }
-
-    .attribution {
-      margin-top: 4rem;
+    a {
       font-size: 0.875rem;
+    }
+
+    &-phone,
+    &-email {
+      display: flex;
+    }
+
+    &-phone {
+      margin-bottom: 20px;
+    }
+
+    &-phone svg {
+      width: 18px;
+      margin-right: 20px;
+    }
+
+    &-email svg {
+      width: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__links1,
+  &__links2 {
+    a {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links1 {
+    grid-area: links1;
+
+    @include breakpoint-up(large) {
+      justify-self: right;
+    }
+  }
+
+  &__links2 {
+    grid-area: links2;
+  }
+
+  &__social {
+    grid-area: social;
+    justify-self: center;
+
+    @include breakpoint-up(medium) {
+      justify-self: start;
+    }
+
+    svg {
+      width: 35px;
+      height: 35px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      padding: 8px;
+      fill: #ffffff;
+      margin-right: 16px;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        fill: $darkBlueFooterBackground;
+      }
     }
   }
 }

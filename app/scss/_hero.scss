@@ -1,11 +1,15 @@
 .hero {
+  text-align: center;
   &__firstImage {
     position: relative;
+    width: 100%;
+    max-width: 545px;
     background-image: url("../../images/illustration-intro.png");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 20rem;
+    margin: 0 auto;
 
     &::before {
       content: "";
@@ -20,11 +24,14 @@
 
   &__secondImage {
     position: relative;
+    width: 100%;
+    max-width: 545px;
     background-image: url("../../images/illustration-stay-productive.png");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 20rem;
+    margin: 0 auto;
 
     &::before {
       content: "";
@@ -40,6 +47,11 @@
   &__text {
     text-align: center;
     padding-bottom: 2.8rem;
+    margin-top: 5%;
+    @include breakpoint-up(large) {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
     h1 {
       font-weight: 700;
       font-size: 1.875rem;
