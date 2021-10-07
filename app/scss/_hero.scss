@@ -1,7 +1,7 @@
 .hero {
   &__firstImage {
     position: relative;
-    background-image: url("/images/illustration-intro.png");
+    background-image: url("images/illustration-intro.png");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,7 +20,7 @@
 
   &__secondImage {
     position: relative;
-    background-image: url("/images/illustration-stay-productive.png");
+    background-image: url("images/illustration-stay-productive.png");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -67,7 +67,7 @@
       position: absolute;
       bottom: -3px;
       left: 0;
-      background: url("/images/icon-arrow.svg") no-repeat;
+      background: url("images/icon-arrow.svg") no-repeat;
       width: 1.5625rem;
       height: 1.25rem;
       float: right;
