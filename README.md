@@ -1,11 +1,9 @@
 # Fylo
 
 <p align="center">
-  <img alt="Light" src="./images/fylo_mobile.png" width="45%">
+  <img alt="Light" src="./images/fylo.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="./images/fylo_mobile_2.png" width="45%">
-    <img alt="Light" src="./images/fylo_mobile_3.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="./images/fylo2.png" width="45%">
 </p>
 
 # Overview
