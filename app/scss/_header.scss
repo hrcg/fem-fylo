@@ -1,0 +1,53 @@
+.header {
+  nav {
+    padding: 1.5625rem;
+  }
+  &__logo {
+    img {
+      width: 5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__links {
+    a {
+      position: relative;
+      font-size: 0.875rem;
+      color: $white;
+      transition: opacity 200ms ease-in-out;
+      opacity: 0.7;
+      &:not(:last-child) {
+        margin-right: 1.7rem;
+      }
+      /*
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+      }
+      */
+      &:hover {
+        color: $white;
+        opacity: 1;
+        transition: opacity 200ms ease-in-out;
+
+        &::before {
+          background: $white;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    font-size: 0.875rem;
+    color: $white;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
