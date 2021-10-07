@@ -1,14 +1,13 @@
 # Fylo
 
 <p align="center">
-  <img alt="Light" src="./images/fylo.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="./images/fylo2.png" width="45%">
+  <img alt="Screenshot" src="./images/fylo_sc.png" width="50%">
 </p>
 
 # Overview
 
-Frontend Mentor Challenge, I was able to mostly finish the mobile version of the site, desktop one needs a bit more work with media queries.
+Frontend Mentor Challenge.
+Made using HTML/SASS, I was able to mostly 1:1 the design with some exeptions, like the font and the testimonials section.
 
 # Getting Started
 
