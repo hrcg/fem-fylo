@@ -1,7 +1,7 @@
 # Fylo
 
 <p align="center">
-  <img alt="Screenshot" src="./images/fylo_sc.png" width="50%">
+  <img alt="Screenshot" src="./images/fylo_sc.png" width="75%">
 </p>
 
 # Overview
